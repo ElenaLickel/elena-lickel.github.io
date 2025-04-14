@@ -1,0 +1,29 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: #fff;
+    color: #333;
+  }
+  
+  header, footer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #007acc;
+  }
+  
+  h1, h2 {
+    color: #004466;
+  }
+  
+  ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+  }
+  
