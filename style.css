@@ -1,43 +1,62 @@
+/* General settings */
 body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #FAF7F2;
-  color: #333;
+  color: #1D3557;
 }
 
+/* Header */
 header {
   background-color: #D6ECF3;
-  padding: 30px 0;
+  padding: 40px 0 20px 0;
   text-align: center;
-  font-size: 2rem;
-  color: #1d3557;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Navbar */
 nav {
   background-color: #D6ECF3;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 10px 0;
-  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-nav a, .dropdown button {
+nav a, 
+.dropdown button {
   background: none;
   border: none;
-  color: #1d3557;
+  color: #1D3557;
   font-size: 1rem;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 15px;
   font-weight: bold;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-nav a:hover, .dropdown-content a:hover, .dropdown button:hover {
-  color: #457b9d;
+nav a:hover, 
+.dropdown-content a:hover, 
+.dropdown button:hover {
+  color: #457B9D;
 }
 
+/* Dropdown Menu */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -47,31 +66,46 @@ nav a:hover, .dropdown-content a:hover, .dropdown button:hover {
   display: none;
   position: absolute;
   background-color: #D6ECF3;
-  min-width: 120px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
   z-index: 1;
 }
 
 .dropdown-content a {
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
   text-decoration: none;
-  color: #1d3557;
+  color: #1D3557;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #cde1ea;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* Main content sections */
 section {
-  max-width: 800px;
-  margin: 2rem auto;
+  max-width: 900px;
+  margin: 3rem auto;
   padding: 0 1rem;
+  text-align: center;
 }
 
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
 footer {
   text-align: center;
   margin-top: 4rem;
   padding: 1rem;
   color: #777;
+  font-size: 0.9rem;
 }
